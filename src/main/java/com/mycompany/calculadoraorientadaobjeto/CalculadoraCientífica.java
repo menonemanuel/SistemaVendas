@@ -9,11 +9,12 @@ package com.mycompany.calculadoraorientadaobjeto;
  *
  * @author emanuel.4966
  */
-    public class CalculadoraCientífica extends Calculadora{
-        public Double raizQuadrada(Double a){
-            return Math.sqrt(a);
+public class CalculadoraCientífica extends Calculadora{
+    public Double raizQuadrada(Double a){
+        return Math.sqrt(a);
     }
-        public Double potencia(Double a, Double b){
-            return Math.pow(a, b);
-        }
+    
+    public Double potencia(Double a, Double b){
+        return Math.pow(a, b);
+    }
 }

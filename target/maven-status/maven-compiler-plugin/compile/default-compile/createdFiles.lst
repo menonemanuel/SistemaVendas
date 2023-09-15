@@ -1,5 +1,14 @@
+com\mycompany\modelo\newpackage\VisaoMenu.class
+com\mycompany\modelo\newpackage\Computador.class
+newpackage\visao\VisaoVideoGame.class
+com\my\company\sistemavendas_2_0\SistemVendas.class
 com\mycompany\calculadoraorientadaobjeto\ProgramaCalculadora.class
 com\mycompany\calculadoraorientadaobjeto\CalculadoraCientífica.class
-com\mycompany\calculadoraorientadaobjeto\MédiaPonderada.class
+com\mycompany\modelo\newpackage\Produto.class
+newpackage1\outros\Constantes.class
+com\mycompany\controle\ControleSistema.class
+com\mycompany\calculadoraorientadaobjeto\CalculadoraDeMedia.class
+com\mycompany\modelo\newpackage\VideoGame.class
 com\mycompany\calculadoraorientadaobjeto\Calculadora.class
-com\mycompany\calculadoraorientadaobjeto\CalculadoraDeMédia.class
+newpackage\visao\VisaoComputador.class
+com\mycompany\calculadoraorientadaobjeto\MédiaPonderada.class
