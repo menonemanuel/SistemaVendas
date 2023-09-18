@@ -14,6 +14,7 @@ import java.util.Scanner;
  */
 public class VisaoComputador {
     public static Computador menuCadastroComputador(){
+        
         Computador computador = new Computador();
         
         System.out.println("Nome: ");

@@ -28,6 +28,7 @@ public class VisaoMenu {
         System.out.println("Qual categoria de produto deseja cadastrar?");
         System.out.println("1- Video Game");
         System.out.println("2- Computador");
+        System.out.println("3- Televisão");
         System.out.println("==================================");
         int opcaoProduto =  new Scanner(System.in).nextInt();
         
@@ -65,12 +66,21 @@ public class VisaoMenu {
             ((Computador)object).setMemoriaRam(new Scanner(System.in).nextDouble());
             System.out.println("Nova processador: ");
             ((Computador)object).setProcessador(new Scanner(System.in).nextLine());
+        }else if(object instanceof Televisao){
+            System.out.println("Novo nome: ");
+            ((Televisao)object).setNome(new Scanner(System.in).nextLine());
+            System.out.println("Novo preço: ");
+            ((Televisao)object).setPreco(new Scanner(System.in).nextDouble());
+            System.out.println("Nova quantidade de memória Ram: ");
+            ((Televisao)object).setPolegadas(new Scanner(System.in).nextDouble());
+            System.out.println("Nova processador: ");
+            ((Televisao)object).setResolucao(new Scanner(System.in).nextLine());
         }
 
-        return object;
-
+        return object; 
     }
-     public static Object remover(Object object){
+    
+    public static Object remover(Object object){
         System.err.println("Qual produto deseja alterar?");
 
         for(int i = 0; 1 < ControleSistema.produtos.size(); i++){
@@ -81,4 +91,8 @@ public class VisaoMenu {
 
         return produtoRemover;
      }
+
+    public static int menuRemocaoProduto() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

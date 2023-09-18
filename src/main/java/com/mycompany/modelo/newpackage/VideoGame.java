@@ -21,5 +21,10 @@ public class VideoGame extends Produto{
     public void setplataforma(String plataforma) {
         this.plataforma = plataforma;
     }
-    
+    @Override
+        public String toString() {
+            return  "Nome: " + super.getNome() +
+                    " | Preço: " + super.getPreco() +
+                    " | Processador: " + this.plataforma;
+        }  
 }

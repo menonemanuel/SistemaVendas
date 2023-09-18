@@ -23,7 +23,7 @@ public class SistemVendas {
             if(opcaoMenu == Constantes.CADASTRAR){
                 ControleSistema.cadastrar();
                 
-            }else if(opcaoMenu == Constantes. ALTERAR){
+            }else if(opcaoMenu == Constantes.ALTERAR){
                 ControleSistema.alterar(VisaoMenu.menuAlteracaoProduto());
                 
             }else if(opcaoMenu == Constantes.REMOVER){

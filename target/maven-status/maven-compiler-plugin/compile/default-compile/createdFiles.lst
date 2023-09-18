@@ -9,6 +9,8 @@ newpackage1\outros\Constantes.class
 com\mycompany\controle\ControleSistema.class
 com\mycompany\calculadoraorientadaobjeto\CalculadoraDeMedia.class
 com\mycompany\modelo\newpackage\VideoGame.class
+com\mycompany\modelo\newpackage\Televisao.class
+newpackage\visao\VisaoTelevisao.class
 com\mycompany\calculadoraorientadaobjeto\Calculadora.class
 newpackage\visao\VisaoComputador.class
 com\mycompany\calculadoraorientadaobjeto\MédiaPonderada.class
