@@ -10,8 +10,7 @@ package com.mycompany.modelo.newpackage;
  */
     public class Televisao extends Produto{
     private Double polegadas;
-    private String resolucao;
-    public boolean toString;
+    private Double resolucao;
     
     public Televisao() {
     }
@@ -24,11 +23,11 @@ package com.mycompany.modelo.newpackage;
         this.polegadas = plataforma;
     }
 
-    public String getResolucao() {
+    public Double getResolucao() {
         return resolucao;
     }
 
-    public void setResolucao(String resolucao) {
+    public void setResolucao(Double resolucao) {
         this.resolucao = resolucao;
     }
     @Override

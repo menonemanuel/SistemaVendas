@@ -31,6 +31,9 @@ public class SistemVendas {
                 
             }else if(opcaoMenu == Constantes.LISTAR){
                 ControleSistema.listar(ControleSistema.produtos);
+                
+            }else if(opcaoMenu == Constantes.COMPRAR){
+                ControleSistema.comprar(ControleSistema.produtos, VisaoMenu.menuComprar());
             }
         }
     }

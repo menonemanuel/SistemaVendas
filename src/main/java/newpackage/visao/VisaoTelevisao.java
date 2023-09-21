@@ -24,7 +24,7 @@ public class VisaoTelevisao {
         System.out.println("Quantidade de Polegadas: ");
         televisao.setPolegadas(new Scanner(System.in).nextDouble());
         System.out.println("Resolução: ");
-        televisao.setResolucao(new Scanner(System.in).nextLine());
+        televisao.setResolucao(new Scanner(System.in).nextDouble());
         System.out.println("===============================================");
         
         return televisao;  

@@ -4,6 +4,7 @@
  */
 package com.mycompany.modelo.newpackage;
 import com.mycompany.controle.ControleSistema;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -17,6 +18,7 @@ public class VisaoMenu {
         System.out.println("2 -  Alterar produto: ");
         System.out.println("3 -  Remover produto: ");
         System.out.println("4 -  Listar produto: ");
+        System.out.println("5 -  Comprar produto: ");
         System.out.println("==============================");
         int opcaoMenu =  new Scanner(System.in).nextInt();
         
@@ -71,16 +73,16 @@ public class VisaoMenu {
             ((Televisao)object).setNome(new Scanner(System.in).nextLine());
             System.out.println("Novo preço: ");
             ((Televisao)object).setPreco(new Scanner(System.in).nextDouble());
-            System.out.println("Nova quantidade de memória Ram: ");
+            System.out.println("Nova quantidade de Polegadas: ");
             ((Televisao)object).setPolegadas(new Scanner(System.in).nextDouble());
-            System.out.println("Nova processador: ");
-            ((Televisao)object).setResolucao(new Scanner(System.in).nextLine());
+            System.out.println("Nova Resolução: ");
+            ((Televisao)object).setResolucao(new Scanner(System.in).nextDouble());
         }
 
         return object; 
     }
     
-    public static Object remover(Object object){
+    public static int menuRemocaoProduto(){
         System.err.println("Qual produto deseja alterar?");
 
         for(int i = 0; 1 < ControleSistema.produtos.size(); i++){
@@ -92,7 +94,20 @@ public class VisaoMenu {
         return produtoRemover;
      }
 
-    public static int menuRemocaoProduto() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public static int menuComprar() {
+        System.out.println("==============COMPRAR PRODUTO=============");
+        
+        System.out.println("Produtos Cadastrados: ");
+        for(int i = 0; i <ControleSistema.produtos.size(); i ++){
+            
+            System.out.println(i + 1 + " | " + ControleSistema.produtos.get(i));
+        }
+            System.out.println("Qual produto deseja vender? (Digite o número do produto)");
+            int opcaoComprar = new Scanner(System.in).nextInt();
+            return opcaoComprar;
+        
+        
     }
+     
+   
 }

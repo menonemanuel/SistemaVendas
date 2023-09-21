@@ -27,4 +27,8 @@ public class VideoGame extends Produto{
                     " | Preço: " + super.getPreco() +
                     " | Processador: " + this.plataforma;
         }  
+
+    public void setPlataforma(double parseDouble) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

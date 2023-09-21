@@ -84,7 +84,7 @@ public class ControleSistema {
             }
         }
     }
-        
+    
     public static void remover(int indiceProduto){
         
         indiceProduto = indiceProduto - 1;
@@ -96,17 +96,14 @@ public class ControleSistema {
         
         if(sn.equals(Constantes.REMOVER_SIM)){
             if(object instanceof VideoGame){
-                VideoGame VideoGame = new VideoGame();
-                VideoGame = (VideoGame) object;
+                VideoGame videoGame = new VideoGame();
+                VideoGame VideoGame = (VideoGame) object;
             }if (object instanceof Computador){
                 Computador computador =  new Computador();
                 computador = (Computador) object;
-                System.err.println("Deseja realmente remover o produto" + computador.getNome() + "? (S/N)");
-            }if (object instanceof Televisao){
-                Televisao televisao =  new Televisao();
-                televisao = (Televisao) object;
-                System.err.println("Deseja realmente remover o produto" + televisao.getNome()+ "? (S/N)");
+                System.out.println("Deseja realmente remover o produto" + computador.getNome() + "? (S/N)");
             }
+        }
             
             if(sn.equals(Constantes.REMOVER_SIM)){
                 
@@ -118,5 +115,43 @@ public class ControleSistema {
                 System.out.println("Produto inexistente!");
             }
         }
+    
+    public static void comprar(ArrayList<Object> produtos, int indiceProduto){
+        indiceProduto =  indiceProduto - 1;
+
+        Object object = produtos.get(indiceProduto);
+        Scanner scanner = new Scanner(System.in);
+          
+        if(object instanceof VideoGame){
+             VideoGame videoGame = new VideoGame();
+             videoGame = (VideoGame) object;
+             System.out.println("Quantos desse " + videoGame.getNome() + " você deseja vender?");
+             double produtoQuantidade = new Scanner(System.in).nextDouble();
+
+             double totalpreco = produtoQuantidade * videoGame.getPreco();
+             System.out.println("VALOR TOTAL: R$" + totalpreco);
+
+        }else if(object instanceof Computador){
+             Computador computador = new Computador();
+             computador = (Computador) object;
+             System.out.println("Quantos desse " + computador.getNome() + " você deseja vender?");
+             double produtoQuantidade = new Scanner(System.in).nextDouble();
+
+             double totalpreco = produtoQuantidade * computador.getPreco();
+             System.out.println("VALOR TOTAL: R$" + totalpreco);
+
+        }else if(object instanceof Televisao){
+             Televisao televisao = new Televisao();
+             televisao = (Televisao) object;
+             System.out.println("Quantos desse " + televisao.getNome() + " você deseja vender?");
+             double produtoQuantidade = new Scanner(System.in).nextDouble();
+
+             double totalpreco = produtoQuantidade * televisao.getPreco();
+             System.out.println("VALOR TOTAL: R$" + totalpreco);
+        }
+       
     }
 }
+        
+
+    
